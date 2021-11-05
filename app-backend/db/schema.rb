@@ -10,6 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_11_04_221347) do
+
+  create_table "accounts", primary_key: "account_id", id: :string, force: :cascade do |t|
+    t.integer "balance", null: false
+  end
+
+  create_table "transactions", primary_key: "transaction_id", id: :string, force: :cascade do |t|
+    t.string "account_id"
+    t.integer "amount", null: false
+    t.datetime "created_at", null: false
+  end
 
 end
