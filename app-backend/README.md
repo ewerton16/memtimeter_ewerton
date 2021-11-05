@@ -1,5 +1,9 @@
 # Backend Boilerplate Ruby
 
+## My considerations
+
+1. One test (index test) is crashing. I tried to compare a include into an array, but i really don't why it's not work.
+
 ## Project Structure
 
 This project follows [the standard Rails project structure](https://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm).
